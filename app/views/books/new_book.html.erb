@@ -1,0 +1,15 @@
+<%=notice%>
+<%=form_with method: "post", url:booker_path do|f|%>
+    <%=f.text_field :name%>
+    <%=f.text_field :authur%>
+    <%=f.submit%>
+
+<%end%>
+<br>
+<%@book.each do |b|%>
+
+    <%=b.name%> __<%= link_to "delete", url: deleter_path(b.id),method: "delete",data: {confirm: "Are you sure?"}
+      } %><br>
+    <%=b.authur%><br>
+
+<%end%>
