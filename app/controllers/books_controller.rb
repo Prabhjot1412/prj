@@ -29,6 +29,8 @@ class BooksController < ApplicationController
     #another_comment
     #comment
     #commit
+    #commit 3
+  
     @book = Book.new
   end
 
