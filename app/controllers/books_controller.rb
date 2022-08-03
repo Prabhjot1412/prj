@@ -26,6 +26,7 @@ class BooksController < ApplicationController
 
   # GET /books/new
   def new
+    #another_comment
     #comment
     @book = Book.new
   end
